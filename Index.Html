@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Motivational Journal</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    html, body {
+      height: 100%;
+      overflow-x: hidden;
+      scroll-behavior: smooth;
+    }
+    body {
+      background: linear-gradient(to bottom right, rgba(0,0,0,0.6), rgba(0,0,0,0.9)),
+        url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+    }
+    header {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 20px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+    }
+    header h1 {
+      font-size: 2.5em;
+      color: #00ffe7;
+      text-shadow: 1px 1px 4px #000;
+    }
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 40px 20px;
+    }
+    .card {
+      background: rgba(255, 255, 255, 0.07);
+      border-radius: 15px;
+      width: 300px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+      transition: transform 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      display: block;
+    }
+    .card-content {
+      padding: 15px 20px;
+    }
+    .card-content h3 {
+      margin-bottom: 8px;
+      color: #00e4ff;
+      font-size: 1.2em;
+    }
+    .card-content p {
+      font-size: 0.9em;
+      margin-bottom: 6px;
+      color: #dddddd;
+    }
+    .quote {
+      font-style: italic;
+      color: #ffe7a0;
+      font-size: 0.85em;
+      margin-bottom: 8px;
+    }
+    .view-more {
+      color: #00ffc8;
+      font-weight: bold;
+      text-decoration: underline;
+      font-size: 0.9em;
+      display: inline-block;
+      margin-top: 5px;
+    }
+    @media (max-width: 768px) {
+      .card {
+        width: 90%;
+      }
+      header h1 {
+        font-size: 2em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🌟 Motivational Journal</h1>
+  </header>
+  <section class="features">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1526304640581-d334cdbbf45e" alt="Books">
+      <div class="card-content">
+        <h3>📚 Best Motivational Books</h3>
+        <p>Explore inspiring books that change your mindset and uplift your spirit.</p>
+        <p class="quote">"A reader lives a thousand lives before he dies."</p>
+        <a href="C:\Users\admin\OneDrive\Desktop\Sarthak FY-AIML\Motivation\Best Motivational Books.html"><span class="view-more">View more</span></a>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1512295767273-ac109ac3acfa" alt="Journaling">
+      <div class="card-content">
+        <h3>📝 Daily Journaling</h3>
+        <p>Write your thoughts, set intentions, and reflect on your growth daily.</p>
+        <p class="quote">"Journal writing is a voyage to the interior."</p>
+        <a href="C:\Users\admin\OneDrive\Desktop\Sarthak FY-AIML\Motivation\Daily Journaling.html"><span class="view-more">View more</span></a>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1554284126-aa88f22d8b74" alt="Exercise">
+      <div class="card-content">
+        <h3>🏋️‍♂️ Morning Exercise</h3>
+        <p>Boost energy and mindset each morning with physical movement.</p>
+        <p class="quote">"The body achieves what the mind believes."</p>
+        <a href=""><span class="view-more">View more</span></a>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1553621042-f6e147245754" alt="Meditation">
+      <div class="card-content">
+        <h3>🧘 Meditation & Mindfulness</h3>
+        <p>Calm your mind and gain clarity through meditation and breathing.</p>
+        <p class="quote">"Peace comes from within. Do not seek it without."</p>
+        <a href="C:\Users\admin\OneDrive\Desktop\Sarthak FY-AIML\Motivation\Meditation & Mindfulness.html"><span class="view-more">View more</span></a>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4" alt="Goals">
+      <div class="card-content">
+        <h3>🎯 Goal Setting</h3>
+        <p>Define goals and create actionable steps to turn dreams into reality.</p>
+        <p class="quote">"Goals are dreams with deadlines."</p>
+        <a href="C:\Users\admin\OneDrive\Desktop\Sarthak FY-AIML\Motivation\Goal Setting.html"><span class="view-more">View more</span></a>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f" alt="Quotes">
+      <div class="card-content">
+        <h3>💡 Inspirational Quotes</h3>
+        <p>Fuel your day with handpicked quotes that spark positivity and energy.</p>
+        <p class="quote">"Believe you can and you're halfway there."</p>
+        <a href="C:\Users\admin\OneDrive\Desktop\Sarthak FY-AIML\Motivation\Inspirational Quotes.html"><span class="view-more">View more</span></a>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1573497019400-7076e3f51d46" alt="Time">
+      <div class="card-content">
+        <h3>📅 Time Management</h3>
+        <p>Master your time, prioritize well, and stay productive with ease.</p>
+        <p class="quote">"Time is what we want most, but what we use worst."</p>
+        <a href="C:\Users\admin\OneDrive\Desktop\Sarthak FY-AIML\Motivation\Time Management.html"><span class="view-more">View more</span></a>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e" alt="Support">
+      <div class="card-content">
+        <h3>🧑‍🤝‍🧑 Support Groups</h3>
+        <p>Connect with like-minded people and grow together through challenges.</p>
+        <p class="quote">"Alone we can do so little; together we can do so much."</p>
+        <a href="C:\Users\admin\OneDrive\Desktop\Sarthak FY-AIML\Motivation\Support Groups.html"><span class="view-more">View more</span></a>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d" alt="Solving">
+      <div class="card-content">
+        <h3>🧩 Problem Solving</h3>
+        <p>Think clearly and creatively to overcome life and work challenges.</p>
+        <p class="quote">"Every problem has a solution. You just have to be creative enough to find it."</p>
+        <a href="C:\Users\admin\OneDrive\Desktop\Sarthak FY-AIML\Motivation\Problem Solving.html"><span class="view-more">View more</span></a>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1532619062900-b7812f3e5e66" alt="Mindset">
+      <div class="card-content">
+        <h3>🌱 Growth Mindset</h3>
+        <p>Adopt a mindset that embraces challenges and continuous learning.</p>
+        <p class="quote">"Great works are performed not by strength but by perseverance."</p>
+        <a href="C:\Users\admin\OneDrive\Desktop\Sarthak FY-AIML\Motivation\Growth Mindset.html"><span class="view-more">View more</span></a>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
