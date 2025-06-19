@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Inspirational Quotes</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    body {
+      background: linear-gradient(to right, #232526, #414345);
+      background-image: url('https://images.unsplash.com/photo-1506784365847-bbad939e9335');
+      background-size: cover;
+      background-position: center;
+      color: #ffffff;
+      min-height: 100vh;
+      padding: 20px;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    header h1 {
+      font-size: 2.8rem;
+      color: #ffeb3b;
+      text-shadow: 2px 2px 4px #000;
+    }
+    .quote-box {
+      background: rgba(0, 0, 0, 0.6);
+      border-radius: 15px;
+      padding: 30px;
+      max-width: 800px;
+      margin: auto;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+      text-align: center;
+    }
+    .quote-box h2 {
+      font-size: 2rem;
+      color: #00e6ff;
+      margin-bottom: 20px;
+    }
+    .quote-box blockquote {
+      font-style: italic;
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+      line-height: 1.6;
+      color: #f1f1f1;
+      position: relative;
+      padding-left: 20px;
+    }
+    .quote-box blockquote::before {
+      content: "\201C";
+      font-size: 3rem;
+      position: absolute;
+      left: 0;
+      top: -10px;
+      color: #ffd700;
+    }
+    .quote-box cite {
+      display: block;
+      text-align: right;
+      font-size: 1rem;
+      color: #90caf9;
+    }
+    .btn, .social-btn {
+      display: inline-block;
+      margin: 10px 5px 0;
+      padding: 10px 20px;
+      font-size: 1rem;
+      font-weight: bold;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      text-decoration: none;
+    }
+    .btn {
+      background-color: #4caf50;
+    }
+    .btn:hover {
+      background-color: #45a049;
+    }
+    .whatsapp { background-color: #25d366; }
+    .facebook { background-color: #1877f2; }
+    .twitter { background-color: #1da1f2; }
+    .instagram { background-color: #e4405f; }
+    .telegram { background-color: #0088cc; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>💡 Inspirational Quotes</h1>
+  </header>
+  <div class="quote-box">
+    <h2>Words That Move You Forward</h2>
+    <blockquote id="quote-text">Loading quote...</blockquote>
+    <cite id="quote-author"></cite>
+    <button class="btn" onclick="generateQuote()">✨ New Quote</button>
+    <div>
+      <button class="social-btn whatsapp" onclick="share('whatsapp')">WhatsApp</button>
+      <button class="social-btn facebook" onclick="share('facebook')">Facebook</button>
+      <button class="social-btn twitter" onclick="share('twitter')">Twitter</button>
+      <button class="social-btn instagram" onclick="share('instagram')">Instagram</button>
+      <button class="social-btn telegram" onclick="share('telegram')">Telegram</button>
+    </div>
+  </div>
+  <script>
+    const quotes = [
+      { text: "Believe you can and you're halfway there.", author: "— Theodore Roosevelt" },
+      { text: "Your limitation—it's only your imagination.", author: "— Unknown" },
+      { text: "Push yourself, because no one else is going to do it for you.", author: "— Unknown" },
+      { text: "Sometimes later becomes never. Do it now.", author: "— Unknown" },
+      { text: "Great things never come from comfort zones.", author: "— Unknown" },
+      { text: "Dream it. Wish it. Do it.", author: "— Unknown" },
+      { text: "Success doesn’t just find you. You have to go out and get it.", author: "— Unknown" },
+      { text: "The harder you work for something, the greater you’ll feel when you achieve it.", author: "— Unknown" },
+      { text: "Don’t watch the clock; do what it does. Keep going.", author: "— Sam Levenson" },
+      { text: "Keep going. Everything you need will come to you at the perfect time.", author: "— Unknown" },
+      { text: "Little by little, a little becomes a lot.", author: "— Tanzanian Proverb" },
+      { text: "If it doesn’t challenge you, it won’t change you.", author: "— Fred DeVito" },
+      { text: "Success is what comes after you stop making excuses.", author: "— Luis Galarza" },
+      { text: "The future depends on what you do today.", author: "— Mahatma Gandhi" },
+      { text: "Don’t limit your challenges. Challenge your limits.", author: "— Jerry Dunn" },
+      { text: "The secret of getting ahead is getting started.", author: "— Mark Twain" },
+      { text: "Quality means doing it right when no one is looking.", author: "— Henry Ford" },
+      { text: "Only I can change my life. No one can do it for me.", author: "— Carol Burnett" },
+      { text: "It always seems impossible until it’s done.", author: "— Nelson Mandela" },
+      { text: "Do something today that your future self will thank you for.", author: "— Sean Patrick Flanery" }
+      // Add more quotes up to 100 here
+    ];
+
+    function generateQuote() {
+      const random = quotes[Math.floor(Math.random() * quotes.length)];
+      document.getElementById("quote-text").innerText = random.text;
+      document.getElementById("quote-author").innerText = random.author;
+    }
+
+    function share(platform) {
+      const quote = document.getElementById("quote-text").innerText + ' ' + document.getElementById("quote-author").innerText;
+      let url = '';
+      if (platform === 'whatsapp') url = `https://wa.me/?text=${encodeURIComponent(quote)}`;
+      else if (platform === 'facebook') url = `https://www.facebook.com/sharer/sharer.php?u=&quote=${encodeURIComponent(quote)}`;
+      else if (platform === 'twitter') url = `https://twitter.com/intent/tweet?text=${encodeURIComponent(quote)}`;
+      else if (platform === 'instagram') alert("Instagram web sharing is limited. Please paste manually.");
+      else if (platform === 'telegram') url = `https://t.me/share/url?url=&text=${encodeURIComponent(quote)}`;
+      if (url) window.open(url, '_blank');
+    }
+
+    window.onload = generateQuote;
+  </script>
+</body>
+</html>

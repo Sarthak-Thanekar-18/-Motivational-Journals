@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Daily Journaling Books</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+    body {
+      background: linear-gradient(135deg, #f3e7e9 0%, #e3eeff 100%);
+      background-image: url('https://images.unsplash.com/photo-1519681393784-d120267933ba');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      color: #333;
+      min-height: 100vh;
+      padding: 40px 20px;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+    header h1 {
+      font-size: 3rem;
+      color: #2b2d42;
+      text-shadow: 1px 1px 4px rgba(255, 255, 255, 0.6);
+    }
+    .book-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      padding: 0 10px;
+    }
+    .book-card {
+      background: #ffffffcc;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .book-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    }
+    .book-card img {
+      width: 100%;
+      height: 240px;
+      object-fit: cover;
+    }
+    .book-content {
+      padding: 20px;
+    }
+    .book-content h3 {
+      color: #0077b6;
+      margin-bottom: 10px;
+      font-size: 1.2rem;
+    }
+    .book-content p {
+      font-size: 0.95rem;
+      margin-bottom: 10px;
+      color: #444;
+    }
+    .quote {
+      font-style: italic;
+      font-size: 0.9rem;
+      color: #5a189a;
+    }
+    .meta {
+      font-size: 0.85rem;
+      color: #666;
+      margin-bottom: 10px;
+    }
+    .view-more {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 8px 15px;
+      background-color: #0077b6;
+      color: white;
+      text-decoration: none;
+      font-size: 0.9rem;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+    .view-more:hover {
+      background-color: #023e8a;
+    }
+    footer {
+      margin-top: 50px;
+      text-align: center;
+      font-size: 0.85rem;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>📔 Daily Journaling Books</h1>
+  </header>
+  <section class="book-grid">
+    <div class="book-card">
+      <img src="https://images.unsplash.com/photo-1495446815901-a7297e633e8d" alt="Book 6">
+      <div class="book-content">
+        <h3>Bullet Journal Method</h3>
+        <p class="meta">Author: Ryder Carroll | Price: ₹1,250</p>
+        <p>Track the past, organize the present, and plan for the future with this popular journaling method.</p>
+        <p class="quote">"Track the past, order the present, design the future."</p>
+        <a href="https://www.amazon.in/Bullet-Journal-Method-Ryder-Carroll/dp/0008261377" target="_blank" class="view-more">View More</a>
+      </div>
+    </div>
+
+    <div class="book-card">
+      <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f" alt="Book 7">
+      <div class="book-content">
+        <h3>Q&A a Day</h3>
+        <p class="meta">Author: Potter Style | Price: ₹999</p>
+        <p>A 5-year journal with daily prompts to capture your thoughts and track your growth over time.</p>
+        <p class="quote">"Your future self will thank you for recording your journey."</p>
+        <a href="https://www.amazon.in/Q-Day-5-Year-Journal/dp/0307719774" target="_blank" class="view-more">View More</a>
+      </div>
+    </div>
+
+    <div class="book-card">
+      <img src="https://images.unsplash.com/photo-1489533119213-66a5cd877091" alt="Book 8">
+      <div class="book-content">
+        <h3>The Mindfulness Journal</h3>
+        <p class="meta">Author: Barrie Davenport | Price: ₹850</p>
+        <p>Promotes peace and focus with daily mindfulness prompts and writing exercises.</p>
+        <p class="quote">"Find calm in the chaos—one mindful moment at a time."</p>
+        <a href="https://www.amazon.in/Mindfulness-Journal-Barrie-Davenport/dp/1722501441" target="_blank" class="view-more">View More</a>
+      </div>
+    </div>
+  </section>
+  <footer>
+    &copy; 2025 Daily Motivation Journal | Designed with ❤️ to inspire your mind.
+  </footer>
+</body>
+</html>

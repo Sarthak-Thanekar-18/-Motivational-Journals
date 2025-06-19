@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🎯 Goal Setting</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      background-image: url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f');
+      background-size: cover;
+      background-position: center;
+      color: #ffffff;
+      padding: 20px;
+    }
+    header {
+      text-align: center;
+      padding: 30px 20px 10px;
+    }
+    header h1 {
+      font-size: 3em;
+      color: #ffca28;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+    }
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      background-color: rgba(0, 0, 0, 0.65);
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.7);
+    }
+    .container img {
+      width: 100%;
+      border-radius: 12px;
+      margin-bottom: 25px;
+    }
+    .container h2 {
+      color: #26c6da;
+      margin-bottom: 15px;
+      font-size: 1.8em;
+    }
+    .container p {
+      font-size: 1.1em;
+      line-height: 1.7;
+      margin-bottom: 20px;
+    }
+    .quote {
+      font-style: italic;
+      color: #ffc107;
+      margin: 30px 0;
+      text-align: center;
+      font-size: 1.2em;
+    }
+    .tracker, .vision-board, .resources, .todo-list, .milestones, .progress-graph {
+      margin-top: 40px;
+      padding: 20px;
+      background-color: rgba(255,255,255,0.05);
+      border-radius: 10px;
+    }
+    .tracker h3, .vision-board h3, .resources h3, .todo-list h3, .milestones h3, .progress-graph h3 {
+      color: #00e6ff;
+      margin-bottom: 15px;
+    }
+    .tracker ul, .resources ul, .todo-list ul, .milestones ul {
+      list-style: none;
+      padding: 0;
+    }
+    .tracker ul li, .resources ul li, .todo-list ul li, .milestones ul li {
+      background-color: rgba(255,255,255,0.08);
+      padding: 12px 20px;
+      margin-bottom: 10px;
+      border-radius: 8px;
+      display: flex;
+      justify-content: space-between;
+    }
+    .calendar-planner {
+      margin-top: 50px;
+    }
+    .calendar-planner h3 {
+      text-align: center;
+      color: #ffd54f;
+      margin-bottom: 20px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: rgba(255, 255, 255, 0.05);
+      border-radius: 10px;
+      overflow: hidden;
+      margin-bottom: 30px;
+    }
+    th, td {
+      padding: 15px;
+      text-align: center;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    th {
+      background-color: rgba(255, 255, 255, 0.1);
+      color: #00e6ff;
+    }
+    td {
+      color: #f1f1f1;
+    }
+    .note {
+      text-align: center;
+      font-size: 0.9em;
+      color: #ccc;
+    }
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      color: #ccc;
+      font-size: 0.9em;
+    }
+    .progress-bar {
+      height: 20px;
+      background-color: #333;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    .progress-bar-fill {
+      height: 100%;
+      background-color: #4caf50;
+      width: 65%;
+      text-align: center;
+      line-height: 20px;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🎯 Goal Setting</h1>
+  </header>
+
+  <div class="container">
+    <img src="https://images.unsplash.com/photo-1581091870622-3b6a9f066ce0" alt="Goal Setting Image">
+    <h2>Set Clear Goals to Drive Success</h2>
+    <p>Goal setting gives your life direction, helps organize your time and resources, and allows you to measure progress. It is one of the most powerful tools for motivation and success in both personal and professional life.</p>
+    <p>By breaking big ambitions into smaller, specific goals, you can keep your focus, adjust with feedback, and celebrate milestones along the way.</p>
+    <div class="quote">
+      "Setting goals is the first step in turning the invisible into the visible." – Tony Robbins
+    </div>
+
+    <div class="tracker">
+      <h3>🗂️ Sample Weekly Goal Tracker</h3>
+      <ul>
+        <li><span>📘 Read 10 pages daily</span> <span>✔️</span></li>
+        <li><span>🏃 Exercise 30 mins every morning</span> <span>✔️</span></li>
+        <li><span>🧘 Meditate 10 mins daily</span> <span>✔️</span></li>
+        <li><span>🎯 Complete one online course module</span> <span>✔️</span></li>
+        <li><span>📈 Review goals every Sunday</span> <span>🕐</span></li>
+      </ul>
+    </div>
+
+    <div class="calendar-planner">
+      <h3>🗓️ Weekly Goal Calendar Planner</h3>
+      <table>
+        <tr>
+          <th>Day</th>
+          <th>Morning</th>
+          <th>Afternoon</th>
+          <th>Evening</th>
+        </tr>
+        <tr>
+          <td>Monday</td>
+          <td>Read 10 pages</td>
+          <td>Exercise 30 mins</td>
+          <td>Review plan</td>
+        </tr>
+        <tr>
+          <td>Tuesday</td>
+          <td>Meditation 10 mins</td>
+          <td>Work on course</td>
+          <td>Write journal</td>
+        </tr>
+        <tr>
+          <td>Wednesday</td>
+          <td>Goal visualization</td>
+          <td>Project planning</td>
+          <td>Relax & reflect</td>
+        </tr>
+        <tr>
+          <td>Thursday</td>
+          <td>Mindful walk</td>
+          <td>Skill learning</td>
+          <td>Review progress</td>
+        </tr>
+        <tr>
+          <td>Friday</td>
+          <td>Read & reflect</td>
+          <td>Practice speaking</td>
+          <td>Light activity</td>
+        </tr>
+        <tr>
+          <td>Saturday</td>
+          <td>Goal affirmation</td>
+          <td>Creative task</td>
+          <td>Plan next week</td>
+        </tr>
+        <tr>
+          <td>Sunday</td>
+          <td>Self-care</td>
+          <td>Weekly review</td>
+          <td>Family time</td>
+        </tr>
+      </table>
+      <p class="note">Tip: Print this planner or recreate it in your digital calendar to track your goals visually.</p>
+    </div>
+
+    <div class="vision-board">
+      <h3>🎨 Create Your Vision Board</h3>
+      <p>Use a board or digital tool to visually represent your biggest goals. Include images, affirmations, timelines, and anything that inspires action.</p>
+    </div>
+
+    <div class="todo-list">
+      <h3>✅ Daily To-Do List</h3>
+      <ul>
+        <li><span>Write top 3 goals</span> <span>📝</span></li>
+        <li><span>Track progress in journal</span> <span>📔</span></li>
+        <li><span>Visualize one completed goal</span> <span>🔮</span></li>
+      </ul>
+    </div>
+
+    <div class="milestones">
+      <h3>🏁 Milestones</h3>
+      <ul>
+        <li><span>Start project</span> <span>✔️</span></li>
+        <li><span>Complete half-way review</span> <span>⏳</span></li>
+        <li><span>Submit final version</span> <span>🔜</span></li>
+      </ul>
+    </div>
+
+    <div class="progress-graph">
+      <h3>📊 Progress Overview</h3>
+      <div class="progress-bar">
+        <div class="progress-bar-fill">65%</div>
+      </div>
+    </div>
+
+    <div class="resources">
+      <h3>📚 Recommended Resources</h3>
+      <ul>
+        <li><span>"Atomic Habits" by James Clear</span></li>
+        <li><span>"The 7 Habits of Highly Effective People" by Stephen Covey</span></li>
+        <li><span>"Goals!" by Brian Tracy</span></li>
+        <li><span>Use tools like Notion, Trello, or Google Calendar</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Motivational Journal | Design for visionary minds
+  </footer>
+</body>
+</html>

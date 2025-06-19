@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>📚 Best Motivational Books</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f5f7fa;
+      background-image: url('https://images.unsplash.com/photo-1507842217343-583bb7270b66');
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
+      color: #333;
+    }
+    header {
+      text-align: center;
+      padding: 50px 20px;
+      background: rgba(0, 0, 0, 0.6);
+      color: #fff;
+    }
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+      color: #ffd700;
+    }
+    header p {
+      font-size: 1.2rem;
+      color: #ddd;
+    }
+    .book-section {
+      max-width: 1200px;
+      margin: 40px auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 25px;
+      padding: 0 20px;
+    }
+    .book-card {
+      background: #ffffffdd;
+      border-radius: 15px;
+      padding: 20px;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      text-align: center;
+    }
+    .book-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    }
+    .book-card img {
+      width: 100%;
+      height: 280px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+    .book-card h2 {
+      margin-top: 15px;
+      font-size: 1.6rem;
+      color: #1e3c72;
+    }
+    .book-card p {
+      font-size: 0.95rem;
+      line-height: 1.6;
+      color: #333;
+    }
+    .quote {
+      font-style: italic;
+      color: #4caf50;
+      margin-top: 10px;
+    }
+    .buy-button {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+    .buy-button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>📚 Best Motivational Books</h1>
+    <p>Explore top books that inspire growth, resilience, and success</p>
+  </header>
+  <section class="book-section">
+    <div class="book-card">
+      <img src="https://images-na.ssl-images-amazon.com/images/I/71UwSHSZRnS.jpg" alt="The Power of Now">
+      <h2>The Power of Now</h2>
+      <p>By Eckhart Tolle. A spiritual guide to help discover your true self and find peace in the present moment.</p>
+      <p class="quote">"Realize deeply that the present moment is all you ever have."</p>
+      <a href="https://www.amazon.in/dp/8190105914" target="_blank" class="buy-button">Buy on Amazon</a>
+    </div>
+    <div class="book-card">
+      <img src="https://images-na.ssl-images-amazon.com/images/I/81-QB7nDh4L.jpg" alt="Think and Grow Rich">
+      <h2>Think and Grow Rich</h2>
+      <p>By Napoleon Hill. A timeless classic offering principles for achieving personal and financial success.</p>
+      <p class="quote">"Whatever the mind can conceive and believe, it can achieve."</p>
+      <a href="https://www.amazon.in/dp/818322784X" target="_blank" class="buy-button">Buy on Amazon</a>
+    </div>
+    <div class="book-card">
+      <img src="https://images-na.ssl-images-amazon.com/images/I/81WcnNQ-TBL.jpg" alt="Atomic Habits">
+      <h2>Atomic Habits</h2>
+      <p>By James Clear. A powerful book on building good habits, breaking bad ones, and mastering behavior.</p>
+      <p class="quote">"You do not rise to the level of your goals. You fall to the level of your systems."</p>
+      <a href="https://www.amazon.in/dp/1847941834" target="_blank" class="buy-button">Buy on Amazon</a>
+    </div>
+    <div class="book-card">
+      <img src="https://images-na.ssl-images-amazon.com/images/I/71g2ednj0JL.jpg" alt="The 7 Habits of Highly Effective People">
+      <h2>The 7 Habits of Highly Effective People</h2>
+      <p>By Stephen R. Covey. A principle-centered approach for solving personal and professional problems.</p>
+      <p class="quote">"Start with the end in mind."</p>
+      <a href="https://www.amazon.in/dp/1471195201" target="_blank" class="buy-button">Buy on Amazon</a>
+    </div>
+    <div class="book-card">
+      <img src="https://images-na.ssl-images-amazon.com/images/I/91bYsX41DVL.jpg" alt="Can't Hurt Me">
+      <h2>Can't Hurt Me</h2>
+      <p>By David Goggins. A story of self-discipline and mental toughness from one of the toughest men alive.</p>
+      <p class="quote">"You are in danger of living a life so comfortable and soft, that you will die without ever realizing your true potential."</p>
+      <a href="https://www.amazon.in/dp/1544512287" target="_blank" class="buy-button">Buy on Amazon</a>
+    </div>
+  </section>
+</body>
+</html>
